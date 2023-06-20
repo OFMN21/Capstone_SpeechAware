@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="author" content="templatemo">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <title>SpeechAware - Speaker Emotion</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="static/css/fontawesome.css">
+    <link rel="stylesheet" href="static/css/templatemo-liberty-market.css">
+    <link rel="stylesheet" href="static/css/owl.css">
+    <link rel="stylesheet" href="static/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="/" class="logo">
+                        <img src="static/images/logo.png" alt="">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li><a href="/" class="active">Home</a></li>
+                        <li><a href="explore.html">Explore</a></li>
+                        <li><a href="details.html">Item Details</a></li>
+                        <li><a href="author.html">Author</a></li>
+                        <li><a href="create.html">Create Yours</a></li>
+                    </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <div class="main-banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center">
+          <div class="header-text" style="background-color: rgba(72, 71, 71, 0.1);">
+            <h2>Speaker Emotion</h2>
+            <p style="text-shadow: 1px 1px 2px black, -1px -1px 2px black; font-weight: bold; font-size: 30px;">
+              Speaker emotion analysis uses AI to identify emotions based on vocal characteristics.
+              It involves training models on labeled audio data to learn patterns and features.
+              Features extracted can include pitch, intensity, speech rate, and spectral characteristics.
+            </p>
+            <div class="buttons">
+              <div class="main-button">  <!--class=border-button-->
+                <a href="#Features">try it </a>
+              </div>
+              <!-- <div class="main-button">
+                <a href="https://youtube.com/templatemo" target="_blank">Watch Our Videos</a>
+              </div> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 offset-lg-1">
+          <div class="owl-banner owl-carousel">
+            <div class="item">
+              <img src="static/images/True-Crime-podcast-microphone-fingerprint-symbol.png"  alt="" style="border-radius: 5%;">
+            </div>
+            <div class="item">
+              <img src="static/images/fingerprint.jpg" alt="" style="border-radius: 5%;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+              <!-- ---------------------------------Features desctiprtion------------------------------------------  -->
+  <a id="Features"></a>
+  <div class="currently-market" >
+    <div class="container">
+      <div class="row" style="padding: 9px;">
+        <div class="col-lg-12">
+          <div class="section-heading" style="position: relative; left: 390px;" >
+            <h2>Detect Emotion</h2>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="row grid">
+            <div class="col-lg-6 currently-market-item all vtr centered-div" style="margin-top: 40px;">
+              <div class="item centered-div" style="border: #404245; background-color: #f30b0b00; position: relative; right: -250px; margin-left: -190px; top: -7em;">
+                <form action="/SpeakerVerification" method='POST' enctype="multipart/form-data">
+                  <div class="audio-container">
+                    <audio id="audio1" controls></audio>
+                    <div class="audio-controls">
+
+                      <button id="recordButton1" class="record-button" onclick="toggleRecording(1)">
+                        <i class="fas fa-microphone"></i>
+                      </button>
+                
+                    </div>
+                    <label for="file1" class="file-input-label">Choose File</label>
+                    <input type="file" id="file1" accept="audio/*">
+                    
+                  </div>
+                  <div class="main-button divbutton-center">
+                    <button onclick="submitFiles()" class="button-center2">Verify</button>
+                  </div>
+                  <div class="sound-wave-container">
+                    <canvas id="soundWaveCanvas"></canvas>
+                  </div>
+                </form>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <!-- <form action="">
+                  <div class="audio-container">
+                    <audio id="audio1" controls></audio>
+                    <label for="file1" class="file-input-label">Choose File</label>
+                    <input type="file" id="file1" accept="audio/*">
+                  </div>
+                  <div class="audio-container">
+                    <audio id="audio2" controls></audio>
+                    <label for="file2" class="file-input-label">Choose File</label>
+                    <input type="file" id="file2" accept="audio/*">
+                  </div>
+                  <div class="main-button divbutton-center">
+                    <button onclick="submitFiles()" class="button-center2">Verify</button>
+                  </div>
+                  <div class="sound-wave-container">
+                    <canvas id="soundWaveCanvas"></canvas>
+                  </div>
+                </form> -->
+              </div>
+            </div>
+                      
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+              <!-- ---------------------------------Features desctiprtion------------------------------------------  -->
+
+
+<!-- ***** Main Banner Area End ***** -->
+
+<!-- ***** Main Banner Area End ***** -->
+
+  <!-- <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2022 <a href="#">Liberty</a> NFT Marketplace Co., Ltd. All rights reserved.
+          &nbsp;&nbsp;
+          Designed by <a title="HTML CSS Templates" rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
+        </div>
+      </div>
+    </div>
+  </footer> -->
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="static/jquery/jquery.min.js"></script>
+  <script src="static/js/bootstrap.min.js"></script>
+
+  <script src="static/js/isotope.min.js"></script>
+  <script src="static/js/owl-carousel.js"></script>
+
+  <script src="static/js/tabs.js"></script>
+  <script src="static/js/popup.js"></script>
+  <script src="static/js/custom.js"></script>
+  <script src="static/js/audioplayer.js"></script>
+
+  </body>
+</html>

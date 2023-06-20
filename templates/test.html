@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Speaker Verification</title>
+  <style>
+    /* Style for the divs */
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+    
+    /* Style for the pop-up */
+    .popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      font-size: 18px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form>
+      <input type="file" accept="audio/*" />
+      <button type="submit">Upload</button>
+    </form>
+    <audio controls></audio>
+  </div>
+  
+  <div class="container">
+    <form>
+      <input type="file" accept="audio/*" />
+      <button type="submit">Upload</button>
+    </form>
+    <audio controls></audio>
+  </div>
+  
+  <div class="popup">
+    Result: Speaker is <span id="result"></span>
+  </div>
+
+  <script>
+    // JavaScript code for handling form submission and displaying the result
+    const forms = document.querySelectorAll('form');
+    const popup = document.querySelector('.popup');
+    const result = document.getElementById('result');
+
+    forms.forEach(form => {
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        // Code to process the audio files and check if the speaker is the same
+
+        // Dummy result for demonstration purposes
+        const isSameSpeaker = true;
+
+        // Display the result in the popup
+        result.textContent = isSameSpeaker ? 'the same' : 'different';
+        popup.style.display = 'block';
+      });
+    });
+  </script>
+</body>
+</html>
